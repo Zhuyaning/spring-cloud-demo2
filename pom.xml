@@ -7,14 +7,13 @@
     <modules>
         <module>micro-service-cloud-api</module>
         <module>micro-service-cloud-provider-dept-8001</module>
-        <module>micro-service-cloud-eureka-7003</module>
         <module>micro-service-cloud-eureka-7001</module>
-        <module>micro-service-cloud-eureka-7002</module>
+
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.6.RELEASE</version>
+        <version>2.3.12.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.zhuyaning</groupId>
