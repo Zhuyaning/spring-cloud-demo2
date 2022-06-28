@@ -6,9 +6,10 @@
     <packaging>pom</packaging>
     <modules>
         <module>micro-service-cloud-api</module>
-        <module>micro-service-cloud-api</module>
-        <module>micro-service-cloud-eureka-7001</module>
         <module>micro-service-cloud-provider-dept-8001</module>
+        <module>micro-service-cloud-eureka-7003</module>
+        <module>micro-service-cloud-eureka-7001</module>
+        <module>micro-service-cloud-eureka-7002</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
