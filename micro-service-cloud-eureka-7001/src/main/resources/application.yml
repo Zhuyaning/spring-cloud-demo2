@@ -1,6 +1,10 @@
 server:
   port: 7001  #端口号
 
+spring:
+  application:
+    name: MicroServiceCloudEureka7001Application
+
 eureka:
   instance:
     hostname: eureka7001.com #eureka服务端的实例名称

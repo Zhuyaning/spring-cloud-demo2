@@ -1,6 +1,10 @@
 server:
   port: 7003 #端口号
 
+spring:
+  application:
+    name: MicroServiceCloudEureka7003Application
+
 eureka:
   instance:
     hostname: eureka7003.com #Eureka Server 实例名称
