@@ -1,9 +1,9 @@
 spring:
   application:
-    name: MicroServiceCloudEureka7001Application
+    name: MicroServiceCloudEureka7002Application
 
 server:
-  port: 7001  #该 Module 的端口号
+  port: 7002  #该 Module 的端口号
 
 eureka:
   instance:
@@ -13,4 +13,4 @@ eureka:
     register-with-eureka: false #false表示不向注册中心注册自己。
     fetch-registry: false #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
     service-url:
-      defaultZone: https://${eureka.instance.hostname}:7002/eureka/,https://${eureka.instance.hostname}:7003/eureka/
+      defaultZone: https://${eureka.instance.hostname}:7001/eureka/,https://${eureka.instance.hostname}:7003/eureka/

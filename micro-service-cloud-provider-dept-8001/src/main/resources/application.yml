@@ -27,7 +27,7 @@ mybatis:
 eureka:
   client: #将客户端注册到 eureka 服务列表内
     service-url:
-      defaultZone: http://localhost:7001/eureka  #这个地址是 7001注册中心在 application.yml 中暴露出来额注册地址 （单机版）
+      defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka,http://localhost:7003/eureka  #这个地址是 7001注册中心在 application.yml 中暴露出来额注册地址 （单机版）
 
   instance:
     instance-id: spring-cloud-provider-8001 #自定义服务名称信息
