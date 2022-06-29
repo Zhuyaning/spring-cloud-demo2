@@ -9,6 +9,7 @@
         <module>micro-service-cloud-provider-dept-8001</module>
         <module>micro-service-cloud-eureka-7001</module>
         <module>micro-service-cloud-consumer-dept-feign</module>
+        <module>micro-service-cloud-provider-dept-hystrix-8004</module>
 
     </modules>
     <parent>
