@@ -21,16 +21,16 @@ public class HystrixControllerConsumer {
     }
 
     @RequestMapping(value = "/consumer/dept/hystrix/ok/{id}")
-    public String deptInfo_Ok(@PathVariable("id") Integer id) {
-        return deptHystrixService.deptInfo_Ok(id);
+    public String deptInfoOk(@PathVariable("id") Integer id) {
+        return deptHystrixService.deptInfoOk(id);
     }
 
     //在客户端进行降级
     @RequestMapping(value = "/consumer/dept/hystrix/timeout/{id}")
 //    @HystrixCommand(fallbackMethod = "deptTimeoutHandler") //为该请求指定专属的回退方法
 //    @HystrixCommand
-    public String deptInfo_Timeout(@PathVariable("id") Integer id) {
-        String s = deptHystrixService.deptInfo_Timeout(id);
+    public String deptInfoTimeout(@PathVariable("id") Integer id) {
+        String s = deptHystrixService.deptInfoTimeout(id);
         log.info(s);
         return s;
     }
@@ -48,6 +48,8 @@ public class HystrixControllerConsumer {
      * @DefaultProperties(defaultFallback = "dept_Global_FallbackMethod") 类上注解，请求方法上使用 @HystrixCommand 注解
      */
     public String deptGlobalFallbackMethod() {
-        return "运行出错或服务端系统繁忙，请稍后再试！（客户端全局回退方法触发,）";
+        return MSG;
     }
+
+    private static final String MSG = "运行出错或服务端系统繁忙，请稍后再试！（客户端全局回退方法触发,）";
 }

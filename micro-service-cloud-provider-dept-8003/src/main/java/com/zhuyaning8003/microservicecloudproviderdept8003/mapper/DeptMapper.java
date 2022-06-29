@@ -11,5 +11,5 @@ public interface DeptMapper {
     Dept selectByPrimaryKey(Integer deptNo);
 
     //获取表中的全部数据
-    List<Dept> GetAll();
+    List<Dept> getAll();
 }

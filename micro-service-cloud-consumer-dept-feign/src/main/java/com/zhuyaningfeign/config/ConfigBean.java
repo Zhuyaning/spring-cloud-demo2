@@ -11,7 +11,7 @@ public class ConfigBean {
      * 配置 OpenFeign 记录哪些内容
      */
     @Bean
-    Logger.Level feginLoggerLevel() {
+    Logger.Level feignLoggerLevel() {
         return Logger.Level.FULL;
     }
 }

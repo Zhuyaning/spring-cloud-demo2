@@ -25,6 +25,6 @@ public class DeptServiceImpl implements DeptService {
 
     @Override
     public List<Dept> selectAll() {
-        return deptMapper.GetAll();
+        return deptMapper.getAll();
     }
 }
