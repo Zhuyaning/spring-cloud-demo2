@@ -9,7 +9,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>net.biancheng.c</groupId>
+
     <artifactId>micro-service-cloud-provider-dept-8002</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>micro-service-cloud-provider-dept-8002</name>

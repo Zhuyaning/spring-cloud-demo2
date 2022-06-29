@@ -1,0 +1,13 @@
+server:
+  port: 81
+
+spring:
+  application:
+    name: MicroServiceCloudConsumerDeptFeignApplication
+
+eureka:
+  client:
+    register-with-eureka: false #服务消费者可以不向服务注册中心注册服务
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+    fetch-registry: true  #服务消费者客户端需要去检索服务

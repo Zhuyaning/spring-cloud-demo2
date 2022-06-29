@@ -11,8 +11,12 @@ import java.util.List;
 
 @Service("deptService")
 public class DeptServiceImpl implements DeptService {
+
+    private final DeptMapper deptMapper;
     @Autowired
-    private DeptMapper deptMapper;
+    public DeptServiceImpl(DeptMapper deptMapper) {
+        this.deptMapper = deptMapper;
+    }
 
     @Override
     public Dept get(Integer deptNo) {
