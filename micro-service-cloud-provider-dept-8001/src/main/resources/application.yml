@@ -7,7 +7,7 @@ spring:
   datasource:
     username: root        #数据库登陆用户名
     password: root        #数据库登陆密码
-    url: jdbc:mysql://localhost:3306/springcloudtest       #数据库url
+    url: jdbc:mysql://localhost:3306/spring_cloud_db1       #数据库url
     driver-class-name: com.mysql.cj.jdbc.Driver                  #数据库驱动
 
 ############################### 不检查 spring.config.import=configserver:##################
